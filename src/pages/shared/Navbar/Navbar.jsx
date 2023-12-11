@@ -32,8 +32,8 @@ const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
 
   return (
-    <div>
-      <div className="md:flex hidden justify-between items-center px-5 py-2 bg-gray-700 text-white text-[20px]">
+    <div className="">
+      <div className="md:flex hidden justify-between items-center px-5 py-2 bg-gray-700 text-white text-[20px] z-50 sticky">
         <div>
           <img
             className="w-12 h-12 rounded-full"
@@ -51,7 +51,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu  */}
-      <div className="md:hidden text-gray-200 text-[20px] relative">
+      <div className="md:hidden text-gray-200 text-[20px] relative z-50">
         <div className="bg-gray-900 flex justify-between items-center p-3 border-b-[1px] border-gray-600">
         <div>
           <img
