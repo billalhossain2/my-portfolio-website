@@ -45,13 +45,13 @@ const Home = () => {
               </button>
             </div>
             <div className="mt-3 text-[#38BDF8] flex gap-2 text-3xl">
-              <Link>
+              <Link to="https://www.linkedin.com/in/md-billal-hossain-19172b264/">
                 <FaLinkedin />
               </Link>
               <Link>
                 <FaTwitterSquare />
               </Link>
-              <Link>
+              <Link to="https://www.facebook.com/webdevbillal/">
                 <FaFacebook />
               </Link>
             </div>

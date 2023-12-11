@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import profileImg from "../../../assets/images/profile.jpg";
 import { useState } from "react";
 import Hamburger from 'hamburger-react'
@@ -34,11 +34,13 @@ const Navbar = () => {
     <div className="">
       <div className="md:flex hidden justify-between items-center px-5 py-2 bg-gray-700 text-[#38BDF8] font-bold text-[20px] z-50 sticky">
         <div>
+          <Link to="/">
           <img
             className="w-12 h-12 rounded-full border-2 border-[#38BDF8]"
             src={profileImg}
             alt="Profile Image"
           />
+          </Link>
         </div>
         <ul className="flex gap-10">
           {navLinks.map((item, key) => (
