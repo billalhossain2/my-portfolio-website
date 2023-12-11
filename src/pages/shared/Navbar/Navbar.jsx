@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import profileImg from "../../../assets/images/profile.jpg";
 import { useState } from "react";
 import Hamburger from 'hamburger-react'
@@ -43,7 +43,7 @@ const Navbar = () => {
         <ul className="flex gap-10">
           {navLinks.map((item, key) => (
             <li key={key}>
-              <Link to={item.to}>{item.label}</Link>
+              <NavLink to={item.to}>{item.label}</NavLink>
             </li>
           ))}
         </ul>
@@ -67,7 +67,7 @@ const Navbar = () => {
       <ul className={`flex flex-col items-center gap-5 w-full absolute h-screen bg-gray-800 pt-10 duration-300 ${isOpen ? 'left-0':'left-[-110%]'}`}>
           {navLinks.map((item, key) => (
             <li key={key}>
-              <Link to={item.to}>{item.label}</Link>
+              <NavLink to={item.to}>{item.label}</NavLink>
             </li>
           ))}
         </ul>

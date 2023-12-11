@@ -1,0 +1,20 @@
+.skill-label{
+    position: relative;
+}
+
+.skill-label::before, .skill-label::after{
+    content: '';
+    width: 1px;
+    height: 4px;
+    position: absolute;
+    background: #38BDF8;
+    bottom:0;
+}
+
+.skill-label::before{
+    left:0;
+}
+
+.skill-label::after{
+    right:0;
+}

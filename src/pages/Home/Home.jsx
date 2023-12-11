@@ -16,10 +16,10 @@ const Home = () => {
           {/* Animation  */}
           <Animate
           play
-          delay={1}
+          delay={0.2}
           duration={1}
           start={{
-            transform:'translateY(550px)'
+            transform:'translateY(400px)'
           }}
           end={{
             transform:'translateY(0)'

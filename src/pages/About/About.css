@@ -4,11 +4,11 @@
 
 .services-wrapper{
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 3rem;
     /* position: absolute; */
     color:#38BDF8;
-    border:#052330 3px solid;
-    background-image: radial-gradient(180px, #38BDF8, transparent 90%);
+    border:#107aa754 3px solid;
+    background-image: radial-gradient(180px, #38BDF8, #1F2937, transparent 90%);
     animation: rotation 10s linear 1s infinite;
 }
 

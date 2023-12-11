@@ -1,7 +1,7 @@
 import PageHeaderContent from "../../components/PageHeaderContent";
 import "./About.css";
 import { Animate } from "react-simple-animate";
-
+import profileImg from "../../assets/images/profile.jpg"
 // icons
 import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
@@ -12,15 +12,17 @@ const About = () => {
       <div className="flex lg:flex-row flex-col lg:overflow-hidden gap-10 bg-gray-800">
         <Animate
           play
-          duration={1}
+          delay={0.1}
+          duration={1.5}
           start={{
-            transform: "translateX(-1900px)",
+            transform: "translateX(-800px)",
           }}
           end={{
             transform: "translateX(0px)",
           }}
         >
-          <p className="p-5 text-gray-400 border-b-2 border-[#38bff818] lg:max-w-[700px] lg:py-14">
+          <img className="md:w-64 w-44 md:h-64 h-44 rounded-full ml-3 my-5" src={profileImg} alt="Profile Image" />
+          <p className="pl-3 text-gray-400 border-b-2 border-[#38bff818] lg:max-w-[700px] lg:pb-5">
             Hi, I'm Billal Hossain, a front-end web developer dedicated to
             bringing digital ideas to life. Proficient in HTML, CSS, and
             JavaScript, I specialize in creating visually appealing and
@@ -31,44 +33,13 @@ const About = () => {
             and build something extraordinary for your digital presence!
           </p>
 
-        </Animate>
 
-        <Animate
-          play
-          duration={1}
-          start={{
-            transform: "translateX(1200px)",
-          }}
-          end={{
-            transform: "translateX(0)",
-          }}
-        >
-          <div className="wrapper mt-8 lg:absolute lg:ml-0 ml-8">
-            <div className="services-wrapper md:w-[200px] md:h-[200px] w-[170px] h-[170px]">
-              <div>
-                <FaReact></FaReact>
-              </div>
-              <div>
-                <FaNodeJs></FaNodeJs>
-              </div>
-              <div>
-                <FaDatabase></FaDatabase>
-              </div>
-              <div>
-                <SiRedux></SiRedux>
-              </div>
-            </div>
-          </div>
-        </Animate>
-      </div>
-
-
-             {/* Personal Info  */}
+                    {/* Personal Info  */}
       <div className="pt-10 bg-gray-800">
-      <h3 className="text-2xl text-[#38BDF8] pb-3 font-bold pl-5">
+      <h3 className="text-2xl text-[#38BDF8] pb-3 font-bold pl-2">
         Personal Information
       </h3>
-      <div className="pl-5 text-gray-400 space-y-4 pb-10 bg-gray-800">
+      <div className="pl-2 text-gray-400 space-y-4 pb-10 bg-gray-800">
         <p>
           <span className="border-b-2 border-[#38BDF8] pb-1">Name</span>: Billal
           Hossain
@@ -89,6 +60,37 @@ const About = () => {
           +8801311123533
         </p>
       </div>
+      </div>
+
+        </Animate>
+
+        <Animate
+          play
+          duration={1.5}
+          start={{
+            transform: "translateX(700px)",
+          }}
+          end={{
+            transform: "translateX(0)",
+          }}
+        >
+          <div className="wrapper lg:pb-0 pb-16 lg:absolute lg:ml-0 ml-8">
+            <div className="services-wrapper md:w-[300px] md:h-[300px] w-[200px] h-[200px] lg:mt-10">
+              <div>
+                <FaReact></FaReact>
+              </div>
+              <div>
+                <FaNodeJs></FaNodeJs>
+              </div>
+              <div>
+                <FaDatabase></FaDatabase>
+              </div>
+              <div>
+                <SiRedux></SiRedux>
+              </div>
+            </div>
+          </div>
+        </Animate>
       </div>
     </div>
   );
