@@ -3,7 +3,12 @@ import "./Home.css";
 import ParticlesCustom from "./ParticlesCustom";
 import { FaLinkedin, FaTwitterSquare, FaFacebook } from "react-icons/fa";
 import { Animate } from "react-simple-animate";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+  const navigate = useNavigate();
+  const handleNavigateToContactPage = ()=>{
+    navigate("/contact")
+  }
   return (
     <div className="relative">
       <ParticlesCustom></ParticlesCustom>
@@ -26,9 +31,11 @@ const Home = () => {
           }}
           >
             <div className="mt-7 flex md:flex-row flex-col md:gap-2 gap-5">
-              <button className="border-[1px] border-[#38BDF8] px-4 py-2 rounded-md text-[#38BDF8] font-bold hover:bg-[#38BDF8] hover:text-white duration-200 w-[200px]">
+
+              <button onClick={handleNavigateToContactPage} className="border-[1px] border-[#38BDF8] px-4 py-2 rounded-md text-[#38BDF8] font-bold hover:bg-[#38BDF8] hover:text-white duration-200 w-[200px]">
                 Hire Me
               </button>
+
               <button className="border-[1px] border-[#38BDF8] px-4 py-2 rounded-md text-[#38BDF8] font-bold hover:bg-[#38BDF8] hover:text-white duration-200 w-[200px]">
                 Download Resume
               </button>
