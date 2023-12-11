@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import profileImg from "../../../assets/images/profile.jpg";
 import { useState } from "react";
-import { FiMenu } from "react-icons/fi";
-import { RxCross2 } from "react-icons/rx";
 import Hamburger from 'hamburger-react'
+import "./Navbar.css"
 const navLinks = [
   {
     label: "Home",
@@ -33,10 +32,10 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="md:flex hidden justify-between items-center px-5 py-2 bg-gray-700 text-white text-[20px] z-50 sticky">
+      <div className="md:flex hidden justify-between items-center px-5 py-2 bg-gray-700 text-[#38BDF8] font-bold text-[20px] z-50 sticky">
         <div>
           <img
-            className="w-12 h-12 rounded-full"
+            className="w-12 h-12 rounded-full border-2 border-[#38BDF8]"
             src={profileImg}
             alt="Profile Image"
           />
@@ -51,7 +50,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu  */}
-      <div className="md:hidden text-gray-200 text-[20px] relative z-50">
+      <div className="md:hidden text-[#38BDF8] text-[20px] relative z-50">
         <div className="bg-gray-900 flex justify-between items-center p-3 border-b-[1px] border-gray-600">
         <div>
           <img
