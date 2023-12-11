@@ -2,6 +2,7 @@ import PageHeaderContent from "../../components/PageHeaderContent";
 import { Line } from 'rc-progress';
 import "./Skills.css";
 import { Animate } from "react-simple-animate";
+import { Helmet } from "react-helmet";
 
 const skills = [
   {
@@ -78,6 +79,9 @@ const skills = [
 const Skills = () => {
   return (
     <div className="bg-gray-800 pb-16">
+      <Helmet>
+        <title>Billal Hossain | Skills</title>
+      </Helmet>
       <PageHeaderContent title="Skills"></PageHeaderContent>
 
       <Animate 

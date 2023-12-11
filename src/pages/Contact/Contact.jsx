@@ -1,10 +1,14 @@
 import { Animate } from "react-simple-animate";
 import PageHeaderContent from "../../components/PageHeaderContent";
 import "./Contact.css";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <div className="overflow-hidden">
+      <Helmet>
+        <title>Billal Hossain | Contact</title>
+      </Helmet>
       <PageHeaderContent title="Contact"></PageHeaderContent>
 
       <Animate

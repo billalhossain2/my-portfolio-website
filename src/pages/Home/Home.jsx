@@ -4,6 +4,7 @@ import ParticlesCustom from "./ParticlesCustom";
 import { FaLinkedin, FaTwitterSquare, FaFacebook } from "react-icons/fa";
 import { Animate } from "react-simple-animate";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const Home = () => {
   const navigate = useNavigate();
   const handleNavigateToContactPage = ()=>{
@@ -11,6 +12,9 @@ const Home = () => {
   }
   return (
     <div className="relative">
+      <Helmet>
+        <title>Billal Hossain | Home</title>
+      </Helmet>
       <ParticlesCustom></ParticlesCustom>
       <div className="absolute flex justify-center items-center w-full h-screen pl-1">
         <div>
