@@ -1,8 +1,11 @@
+import PageHeaderContent from "../../components/PageHeaderContent";
 import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <PageHeaderContent title="Contact"></PageHeaderContent>
+    </div>
   )
 }
 
