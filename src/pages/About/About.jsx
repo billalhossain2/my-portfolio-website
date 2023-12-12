@@ -2,6 +2,7 @@ import PageHeaderContent from "../../components/PageHeaderContent";
 import "./About.css";
 import { Animate } from "react-simple-animate";
 import profileImg from "../../assets/images/profile.jpg"
+
 // icons
 import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
@@ -12,7 +13,10 @@ const About = () => {
       <Helmet>
         <title>Billal Hossain | About</title>
       </Helmet>
-      <PageHeaderContent title="About Me"></PageHeaderContent>
+
+      <PageHeaderContent title="About Me">
+      </PageHeaderContent>
+
       <div className="flex lg:flex-row flex-col lg:overflow-hidden gap-10 bg-gray-800">
         <Animate
           play

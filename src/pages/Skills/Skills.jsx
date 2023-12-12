@@ -87,7 +87,7 @@ const Skills = () => {
       <Animate 
       play
       delay={0.1}
-      duration={2}
+      duration={1}
       start={{
         transform:'translateX(-1500px)'
       }}

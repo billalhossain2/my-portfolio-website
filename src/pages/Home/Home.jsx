@@ -5,11 +5,12 @@ import { FaLinkedin, FaTwitterSquare, FaFacebook } from "react-icons/fa";
 import { Animate } from "react-simple-animate";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import resume from "../../assets/Web Developer Resume.pdf";
 const Home = () => {
   const navigate = useNavigate();
-  const handleNavigateToContactPage = ()=>{
-    navigate("/contact")
-  }
+  const handleNavigateToContactPage = () => {
+    navigate("/contact");
+  };
   return (
     <div className="relative">
       <Helmet>
@@ -24,24 +25,27 @@ const Home = () => {
           </div>
           {/* Animation  */}
           <Animate
-          play
-          delay={0.2}
-          duration={1}
-          start={{
-            transform:'translateY(400px)'
-          }}
-          end={{
-            transform:'translateY(0)'
-          }}
+            play
+            delay={0.2}
+            duration={1}
+            start={{
+              transform: "translateY(400px)",
+            }}
+            end={{
+              transform: "translateY(0)",
+            }}
           >
             <div className="mt-7 flex md:flex-row flex-col md:gap-2 gap-5">
-
-              <button onClick={handleNavigateToContactPage} className="border-[1px] border-[#38BDF8] px-4 py-2 rounded-md text-[#38BDF8] font-bold hover:bg-[#38BDF8] hover:text-white duration-200 w-[200px]">
+              <button
+                onClick={handleNavigateToContactPage}
+                className="border-[1px] border-[#38BDF8] px-4 py-2 rounded-md text-[#38BDF8] font-bold hover:bg-[#38BDF8] hover:text-white duration-200 w-[200px]"
+              >
                 Hire Me
               </button>
-
               <button className="border-[1px] border-[#38BDF8] px-4 py-2 rounded-md text-[#38BDF8] font-bold hover:bg-[#38BDF8] hover:text-white duration-200 w-[200px]">
-                Download Resume
+                <a href={resume} download>
+                  Download Resume
+                </a>
               </button>
             </div>
             <div className="mt-3 text-[#38BDF8] flex gap-2 text-3xl">

@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden h-[100%] bg-gray-800">
       <Helmet>
         <title>Billal Hossain | Contact</title>
       </Helmet>
@@ -37,7 +37,7 @@ const Contact = () => {
         transform:'translateX(0px)'
       }}
       >
-      <form className="px-5" action="">
+      <form className="px-5 bg-gray-800 pb-5" action="">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
 
         <div>

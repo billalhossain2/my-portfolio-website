@@ -42,7 +42,7 @@ const Navbar = () => {
           />
           </Link>
         </div>
-        <ul className="flex gap-10">
+        <ul className="flex gap-10 navLinks">
           {navLinks.map((item, key) => (
             <li key={key}>
               <NavLink to={item.to}>{item.label}</NavLink>
@@ -66,7 +66,7 @@ const Navbar = () => {
             <Hamburger toggled={isOpen} toggle={setOpen} />
             </div>
         </div>
-      <ul className={`flex flex-col items-center gap-5 w-full absolute h-screen bg-gray-800 pt-10 duration-300 ${isOpen ? 'left-0':'left-[-110%]'}`}>
+      <ul className={`flex flex-col items-center gap-5 w-full navLinks absolute h-screen bg-gray-800 pt-10 duration-300 ${isOpen ? 'left-0':'left-[-110%]'}`}>
           {navLinks.map((item, key) => (
             <li key={key}>
               <NavLink to={item.to}>{item.label}</NavLink>
